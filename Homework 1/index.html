@@ -1,0 +1,75 @@
+<!-- comment (ctrl + /) -->
+<!DOCTYPE html> <!-- message for browser: "This is HTML-document" -->
+<html lang="ru"> <!-- borders of HTML-document -->
+  <!-- atribute "lang"- language of this page (for browser translators) -->
+<head> <!-- service information -->
+  <meta charset="utf-8"> <!-- tag "meta", atribute "charset" encoding of document, utf-8 for cyrillic -->
+  <meta name="author" content="AnthonyNechaev"> <!-- author of document -->
+  <meta name="description" content="base information about document"> <!--description of document - 100 symbols -->
+  <title>Chemistry</title> <!-- title of tab, less than 40 symbols -->
+  <link rel="icon" href="images/icon.png"><!-- tab icon -->
+  <!-- style -->
+  <!-- scrypt -->
+</head>
+<body> <!-- information for user -->
+<!-- <div></div> some content (header, main or footer) -->
+  <header> <!-- header of site -->
+    <nav> <!-- navigation -->
+      <!-- absolute link href="https://www.google.ru/" -->
+      <!-- relative link from root directory (for servers) href="/about.html" -->
+      <!-- relative link from current page href="hotel.html" (at the same directory) -->
+      <!-- relative link from current page to upper directory href="../page-at-upper-directory.html" -->
+      <!-- atribute download in tag "a" is used for downloading document -->
+      <!-- <a href="#target"> link to some item (div with id "target") on this page (id) </a>
+    <div id="target"> </div> -->
+    <!-- if you don't have page to link, use href="#" -->
+    <a href="index.html">Home</a>
+    <a href="about.html">About us</a>
+    <a href="school.html">Chemistry school</a>
+    <a href="media.html">Media</a>
+    </nav>
+    <h2>What's new</h2>
+    <nav>
+      <a href="#new-metals">New metals</a>
+      <a href="#new-nonmetals">New nonmetals</a>
+      <p>Tap the images for more information</p>
+    </nav>
+  </header>
+  <aside> <!-- some additional content -->
+    <figure>
+      <figcaption> Chemistry </figcaption>
+      <img alt="Chemistry" src="images/Chemistry.jpg"> <!-- image atributes: "src" - image source;
+                                                        "alt" - if image can't be displayed, user will see this text
+                                                      "height="400", "width="500" - height and width of image in pixels -->
+    </figure>
+    <figure>
+      <figcaption> Organic chemistry </figcaption>
+      <img alt="Organic chemistry" src="images/organic.jpg">
+    </figure>
+  </aside>
+  <main> <!-- main content of doc -->
+    <section> <!-- some great section of site -->
+      <h2 id="new-metals">New metals</h2>
+      <div>
+        <h3>Mercury</h3>
+        <a href="https://en.wikipedia.org/wiki/Mercury_(element)"><img alt="Mercury" src="images/Mercury.jpg"></a>
+        <p>Mercury is the only liquid metal under normal conditions.</p>
+      </div>
+      <div>
+        <h3>Gold</h3>
+        <a href="https://en.wikipedia.org/wiki/Gold"><img alt="Gold" src="images/Gold.jpg"></a>
+        <p>Gold is one of the least reactive chemical elements.</p>
+      </div>
+    </section>
+    <section>
+      <h2 id="new-nonmetals">New nonmetals</h2>
+      <div>
+        <h3>Fluorine</h3>
+        <a href="https://en.wikipedia.org/wiki/Fluorine"><img alt="Liquid fluorine" src="images/Fluorine.jpg"></a>
+        <p>Fluorine is the most reactive nonmetal.</p>
+      </div>
+    </section>
+  </main>
+  <footer></footer> <!-- footer of site -->
+</body>
+</html>
