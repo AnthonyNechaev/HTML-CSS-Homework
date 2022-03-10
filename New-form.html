@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="multiple">Choose some options</label>
+      <!-- How to choose? -->
+      <select id="multiple" name="multiple-select" multiple>
+        <option value="1">1st option</option>
+        <option value="2">2nd option</option>
+        <option value="3">3rd option</option>
+      </select>
+      <label for="single">Choose one option</label>
+      <select id="single" name="single-select">
+        <option value="1.1">1st single option</option>
+        <option value="2.1">2nd single option</option>
+      </select>
+      <select name="group">
+        <optgroup label="Russia">
+          <option value="Msc" selected>Moscow</option>
+          <option value="Spb">Saint-Petersburg</option>
+        </optgroup>
+        <optgroup label="Great Britain">
+          <option value="Lnd">London</option>
+          <option value="Edb">Edinburgh</option>
+        </optgroup>
+        <optgroup disabled label="China">
+          <option value="Pkn">Pekin</option>
+        </optgroup>
+      </select>
+      <fieldset>
+        <legend>Category</legend>
+        <label>Cat <input checked type="radio" name="Category" value="cat"></label>
+        <label>Dog <input type="radio" name="Category" value="dog"></label>
+        <label>Doesn't matter <input type="radio" name="Category" value="doesn't matter"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Size</legend>
+        <label>Big <input type="checkbox" name="size[]" value="big"></label>
+        <label>Medium <input type="checkbox" name="size[]" value="medium"></label>
+        <label>Small <input type="checkbox" name="size[]" value="small"></label>
+      </fieldset>
+      <label for="max-age">Max age</label>
+      <input id="max-age" type="number" name="age" min="0" max="20" step="2">
+      <div>
+        <!-- rows cols? Text? -->
+        <label><textarea name="additional-info" rows="8" cols="80">Text</textarea></label>
+      </div>
+      <div>
+        <input type="file" name="photo" accept="image/jpeg, image/x-png">
+        <input type="file" name="photo[]" multiple accept="image/*">
+      </div>
+      <input type="email" placeholder="E-mail" name="mail">
+      <!-- datetime works bad -->
+      <input type="datetime-local" name="datetime">
+      <datalist id="fruits">
+        <option value="Яблоко">
+        <option value="Груша">
+        <option value="Апельсин">
+        <option value="Лимон">
+        <option value="Банан">
+        <option value="Ананас">
+        <option value="Киви">
+      </datalist>
+      <input type="text" list="fruits">
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Some button</button>
+      </div>
+    </form>
+  </body>
+</html>
