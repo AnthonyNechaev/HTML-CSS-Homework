@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flat selection</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <p>For flat selection, please, register and leave a request</p>
+      <fieldset>
+        <legend>Registration</legend>
+        <label>E-mail<input type="email" name="email" placeholder="XXXXXXX@XXXX.XX" required autofocus></label><br>
+        <label>Password<input type="password" name="password" placeholder="min 8 symbols" required minlength="8"></label><br>
+        <label>Name<input type="text" name="name"></label><br>
+        <label>Age <input type="number" name="age" required></label><br>
+        <label>Phone number <input type="text" name="phone" placeholder="only number, without spaces" maxlength="11"></label><br>
+        <button type="submit" name="submit">Submit</button>
+        <button type="reset" name="reset">Reset</button>
+      </fieldset>
+    </form>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Request</legend>
+        <label>Location <input type="text" name="location" placeholder="district, metro station, street"></label><br>
+        <label>Rooms
+          <select name="rooms" multiple>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">More</option>
+          </select>
+        </label><br>
+        <label>Year of construction
+          <select name="year" multiple>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+          </select><br>
+        </label>
+        <label>Max price <input type="number" name="price">$</label><br>
+        <label>Max area <input type="number" name="area">sq.metres</label>
+        <fieldset>
+          <legend>Furnish</legend>
+          <label>Yes<input checked type="radio" name="Furnish" value="1"></label>
+          <label>No<input type="radio" name="Furnish" value="0"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Terrace</legend>
+          <label>Yes<input checked type="radio" name="Terrace" value="1"></label>
+          <label>No<input type="radio" name="Terrace" value="0"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Category</legend>
+          <label>Business<input checked type="checkbox" name="Category" value="Business"></label>
+          <label>Premium<input type="checkbox" name="Category" value="Premium"></label>
+          <label>De luxe<input type="checkbox" name="Category" value="deluxe"></label>
+        </fieldset>
+        <label>Floor
+          <select name="floor" multiple>
+            <option value="n1">Not first</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="nh">Not last</option>
+          </select>
+        </label><br>
+        <button type="submit" name="submit">Submit</button>
+        <button type="reset" name="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
