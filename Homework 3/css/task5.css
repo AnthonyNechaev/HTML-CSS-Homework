@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+section {
+  display: inline-block;
+  width: 15%;
+  background-color: lightblue;
+}
+section img {
+  width: 100%;
+  object-fit: cover;
+}
+div {
+  font-size: 20px;
+  padding: 5px;
+}
+
+img.small {
+  width: 15%;
+  object-fit: cover;
+  border-radius: 50%;
+}
