@@ -1,3 +1,4 @@
 body {
   background-image: url(https://picsum.photos/3000/3000?random=1);
+  background-attachment: fixed;
 }

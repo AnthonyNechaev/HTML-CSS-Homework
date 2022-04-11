@@ -7,16 +7,27 @@
   </head>
   <body>
     <ul>
-    <li><a href="#" >Пункт 1</a></li>
-    <li>
+      <li><a href="#" >Пункт 1</a></li>
+      <li>
         <a href="#">Пункт 2</a>
         <ul class="submenu">
-            <li><a href="#">Пункт 2.1</a></li>
-            <li><a href="#">Пункт 2.2</a></li>
+          <li><a href="#">Пункт 2.1</a></li>
+          <li><a href="#">Пункт 2.2</a></li>
         </ul>
-    </li>
-    <li><a href="#">Пункт 3</a></li>
-    <li><a href="#">Личный кабинет</a></li>
-</ul>
+      </li>
+      <li><a href="#">Пункт 3</a></li>
+      <li><a href="#form">Личный кабинет</a></li>
+    </ul>
+    <div id="form" class="center">
+      <div class="form-container">
+        <a href="#" class="button">&#10006;</a>
+      <form action="#" method="post"  class="center">
+        <input class="wide-input color" type="text" name="login" placeholder="Логин">
+        <input class="wide-input color" type="password" name="password" placeholder="Пароль">
+        <input type="checkbox" id="remember" name="remember"><label for="remember" class="color">Запомнить</label>
+        <button class="wide-input" type="submit" name="log-in">Войти</button>
+      </form>
+      </div>
+    </div>
   </body>
 </html>
