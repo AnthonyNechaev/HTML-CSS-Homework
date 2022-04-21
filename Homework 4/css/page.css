@@ -23,7 +23,7 @@ header a {
 header a:hover {
   border-bottom: 3px solid black;
 }
-aside {
+.aside {
   background-color: pink;
 }
 aside a{
@@ -44,4 +44,27 @@ p.price {
 }
 h2 {
   text-transform: uppercase;
+}
+.menu-down {
+  display: none;
+}
+@media (max-width: 540px) {
+  .menu-down {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  }
+  .menu {
+    display: none;
+}
+h2.menu-down{
+    display: block;
+}
+.menu-down:hover + .menu {
+    display: flex;
+    flex-direction: column;
+}
 }
